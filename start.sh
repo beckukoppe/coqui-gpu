@@ -9,7 +9,7 @@ mkdir -p output
 
 echo "🚀 Starting Coqui TTS server with CUDA..."
 
-docker run --rm \
+docker run --name coqui \
   --gpus all \
   -v coqui_cache_gpu:/root/.local/share/tts-gpu \
   -v "$(pwd)/output":/app/output \
