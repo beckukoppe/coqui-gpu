@@ -3,9 +3,6 @@
 set -e
 
 IMAGE_NAME="coqui-tts-gpu"
-OUT_FILE="output/output.wav"
-
-mkdir -p output
 
 echo "🚀 Starting Coqui TTS server with CUDA..."
 
