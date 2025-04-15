@@ -1,8 +1,8 @@
 #!/bin/sh
 #Folder should mount to /root/.local/share/tts/tts_models--multilingual--multi-dataset--xtts_v2
 
-mkdir model/
-cd model/
+mkdir -p /root/.local/share/tts/tts_models--multilingual--multi-dataset--xtts_v2
+cd /root/.local/share/tts/tts_models--multilingual--multi-dataset--xtts_v2
 
 download() {
     if [ -f "$1" ]; then
