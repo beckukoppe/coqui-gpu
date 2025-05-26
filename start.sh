@@ -12,6 +12,6 @@ docker run --rm \
   -v "$(pwd)/output":/app/output \
   -p 5002:5002 \
   $IMAGE_NAME \
-  "./script.sh"
+  "./start_server.sh"
 
 echo "✅ Server exited."
